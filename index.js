@@ -10,16 +10,9 @@ function wrapGifts(gifts) {
 
 wrapGifts(gifts)
 
-const names = [`Ada`, `Brendan`, `Ali`]
-const typeOfGift = `birthday`
-
-function writeCards(names, typeOfGift) {
-    for ( let i=0; i < names.length; i++) {
-        console.log(`Thank you, ${[names[i]]} for the wonderful ${typeOfGift} gift!`)
-    }
+const writeCards = (arr, eventName) => {
+    return arr.map(name => name = `Thank you, ${name}, for the wonderful ${eventName} gift!`)
 }
-
-writeCards(names, typeOfGift)
 
 function countDown() {
     let countDown = 10;
